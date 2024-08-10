@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="menu">
+    <p class="title">Desserts</p>
+    <div class="menu_container">
+
+      
+      <div class="menu-item">
+        <img src="./assets/images/image-waffle-desktop.jpg" alt="">
+        <div class="button-container">
+
+          <button class="add-to-cart" onclick="increment('Waffle with Berries', 6.50 , 'Waffle')">Add to Cart</button>
+        </div>
+        <div class="info">
+
+          <h4 id="title">Waffle with Berries</h4>
+          <p id="sousTitle">Waffle</p>
+          <p class="price" id="price">6.50</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="">
+        <div class="button-container">
+
+          <button class="add-to-cart" onclick="increment(
+            'Vanilla Bean Crème Brûlée', 7.00, 'Crème Brûlée'
+          )">Add to Cart</button>
+        </div>
+        <div class="info">
+
+          <h4>Vanilla Bean Crème Brûlée</h4>
+          
+          <p>Crème Brûlée</p>
+          <p class="price">7.00</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/images/image-macaron-desktop.jpg" alt="">
+        <div class="button-container">
+
+          <button class="add-to-cart" 
+          onclick="increment('Macaron Mix of Five', 8.00, 'Macaron')">Add to Cart</button>
+
+        </div>
+        <div class="info">
+
+          <h4>Macaron Mix of Five</h4>
+          
+          <p>Macaron</p>
+          <p class="price">8.00</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/images/image-tiramisu-desktop.jpg" alt="">
+        <div class="button-container">
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="info">
+
+          <h4>Classic Tiramisu</h4>
+          
+          <p>Tiramisu</p>
+          <p class="price">5.50</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/images/image-baklava-desktop.jpg" alt="">
+        <div class="button-container">
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="info">
+
+          <h4>Pistachio Baklava</h4>
+          
+          <p>Baklava</p>
+          <p class="price">4.00</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="">
+        <div class="button-container">
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="info">
+
+          <h4>Lemon Meringue Pie</h4>
+          
+          <p>Pie</p>
+          <p class="price">5.00</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/images/image-baklava-desktop.jpg" alt="">
+        <div class="button-container">
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="info">
+
+          <h4>Red Velvet Cake</h4>
+          
+          <p>Cake</p>
+          <p class="price">4.50</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/images/image-baklava-desktop.jpg" alt="">
+        <div class="button-container">
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="info">
+
+          <h4>Salted Caramel Brownie</h4>
+          
+          <p>Brownie</p>
+          <p class="price">4.50</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/images/image-baklava-desktop.jpg" alt="">
+        <div class="button-container">
+
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="info">
+
+          <h4>Vanilla Panna Cotta</h4>
+          
+          <p>Panna Cotta</p>
+          <p class="price">6.50</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart">
+    <h1>Your Cart (<span id="quantity">0</span>)</h1>
+    <p>Your added items will appear here</p>
+
+
+    <button id="decrement" onclick="decrement()">decrement -- </button>
+  </div>
+
+  <!-- Feel free to remove this attribution if you'd like 😉 -->
+
+</body>
+
+<script src="./index.js"></script>
+
+
+</html>
